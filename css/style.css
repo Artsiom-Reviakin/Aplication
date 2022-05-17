@@ -1,0 +1,209 @@
+/*Обнуление*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    background-image: url(../img/KWcxSbT.gif);
+    background-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*--------*/
+
+.wrapper {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form {
+    max-width: 550px;
+    margin: 0px auto;
+    color: aliceblue;
+    padding: 30px 0;
+}
+.form * {
+    outline: none;
+}
+.form_body {
+    background: rgba(0, 170, 238, 0.7);
+    color: #fff; 
+    padding: 25px; /* Поля вокруг текста */
+    border-radius: 10px;
+}
+.form_title {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+.form_item {
+    margin: 0px 0px 20px 0px;
+}
+.form_label {
+    font-size: 25px;
+    display: block;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+
+}
+.form_input {
+    height: 50px;
+    padding: 0px 20px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: all 0.5s ease 0s;
+}
+.form_input:focus{
+    box-shadow: 0 0 25px #000701;
+}
+textarea.form_input {
+    min-width: 120px;
+    resize: vertical;
+    padding: 20px;
+}
+.option {
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+}
+.option_item {
+    font-size: 25px;
+    display: block;
+    margin: 10px 0px 10px 0px;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.option_label {
+    display: inline-flex;
+    font-size: 25px;
+    list-style: 140%;
+    align-items: center;
+    cursor: pointer;
+}
+.select {
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 0px 20px;
+}
+.file {
+}
+.file_item {
+    position: relative;
+}
+.file_input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    font-size: 0;
+    cursor: pointer;
+}
+.file_button {
+    display: inline-flex;
+    min-height: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    padding: 0px 20px;
+}
+.file_previev {
+    display: inline-block;
+    max-width: 100%;
+    padding: 10px 0px 0px 0px;
+}
+.file_previev img{
+    max-width: 100%;
+}
+.checkbox {
+
+}
+.checkbox_input {
+    display: none;
+}
+.checkbox_input:checked + .chackbox_label::after {
+    transform: scale(1);
+}
+.chackbox_label {
+    font-size: 16px;
+    line-height: 140%;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.chackbox_label::before {
+    content: "";
+    align-self: flex-start;
+    flex: 0 0 24px;
+    height: 24px;
+    background-color: aliceblue;
+    border-radius: 4px;
+    margin: 0px 10px 0px 0px;
+}
+.chackbox_label::after{
+    transition: transform 0.5s ease 0s;
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: aqua;
+    border-radius: 4px;
+    transform: scale(0);
+}
+.chackbox_label a {
+    color: aqua;
+}
+.form_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    background-color: #5aeb0c;
+    color: aliceblue;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0  5px 0 #0c8f22;
+    transition: background-color 0.5s ease 0s;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+}
+.form_button:active {
+    top: 3px;
+    box-shadow: 0 2px 0 #064911;
+}

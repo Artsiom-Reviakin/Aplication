@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Application</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <form action="#" id="form" class="form_body">
+                <h1 class="form_title">
+                    Feedback form
+                </h1>
+                <div class="form_item">
+                    <label for="formName" class="form_label">Name*</label>
+                    <input id="formName" type="text" name="name" class="form_input">
+                </div>
+                <div class="form_item">
+                    <label for="formEmail" class="form_label">Email*</label>
+                    <input id="formEmail" type="text" name="email" class="form_input">
+                </div>
+                <div class="form_item">
+                    <div class="form_label">
+                        What programming languages ​​do you know?
+                    </div>
+                    <div class="option">
+                        <div class="option_item">
+                            <input id="PHP" type="checkbox" value="PHP" name="languages" class="option_label">
+                            <label for="PHP" class="option_label">PHP</label>
+                        
+                        
+                            <input id="Python" type="checkbox" value="Python" name="languages" class="option_label">
+                            <label for="Python" class="option_label">Python</label>
+                        
+                            <div class="option_item">
+                            <input id="Java" type="checkbox" value="Java" name="languages" class="option_label">
+                            <label for="Java" class="option_label">Java</label>
+                        
+                        
+                            <input id="C++" type="checkbox" value="C++" name="languages" class="option_label">
+                            <label for="C++" class="option_label">C++</label>
+
+                            <input id="C#" type="checkbox" value="C#" name="languages" class="option_label">
+                            <label for="C#" class="option_label">C#</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_item">
+                    <lable for="formMessege" class="form_label">Tell us about yourself</lable>
+                    <textarea name="messege" id="formMessege" class="form_input"></textarea>
+                </div>
+                <div class="form_item">
+                    <div class="form_label">
+                        What experience do you have in commercial projects?
+                    </div>
+                    <select name="age" class="select">
+                        <option value="1" selected="selected">0-1</option>
+                        <option value="1">1-3</option>
+                        <option value="1">3-5</option>
+                        <option value="1">5-10</option>
+                    </select>
+                </div>
+                <div class="form_item">
+                    <div class="form_label">
+                        Attach your CV
+                    </div>
+                    <div class="file">
+                        <div class="file_item">
+                            <input id="formFile"type="file" name="CVfile" class="file_input">
+                            <div class="file_button">select</div>
+                        </div>
+                        <div class="file_previev"></div>
+                    </div>
+                </div>
+                    <div class="form_item">
+                        <div class="checkbox">
+                            <input id="formAgreament" checked type="checkbox" name="agreement" class="checkbox_input">
+                            <label for="formAgreament" class="chackbox_label">I consent to the processing of personal data in accordance with the <a href="#">term of use</a></label>
+                    </div>
+                </div>
+                <button type="submit" class="form_button">Sent</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
