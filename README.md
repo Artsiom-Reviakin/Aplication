@@ -4,4 +4,4 @@
 
 [My telegram](https://t.me/club_cryptomania)
 
-[Image alt](https://github.com/{Artsiom-Reviakin}/{Aplication}/raw/{main}/{Screenshot_1.png})
+![Image alt](https://github.com/Artsiom-Reviakin/Aplication/blob/main/Screenshot_1.png)
